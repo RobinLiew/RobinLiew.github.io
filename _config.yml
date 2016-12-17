@@ -1,0 +1,8 @@
+title: Robinliew.GitHub.io
+description: Robin Liew's notes for Android
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
