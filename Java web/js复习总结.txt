@@ -1,0 +1,727 @@
+
+JavaScript
+
+	1.js的引入
+		在script标签中直接书写
+		在script标签src属性中间接引入
+		注意：script标签可以写在任何位置，越靠前越先执行
+			  script文件推荐扩展名是.js，其他任意扩展名也都可以
+			  属性引入js文件后，script标签中就不要再书写js代码了
+			  
+	2.js基本语法
+		1.变量声明
+			var num=10;
+			var str="haha"//单引号和双引号没有区别
+			//js区分大小写
+			//变量的类型可以随时改变
+			var str="heihei";
+			//命名规则，匈牙利命名法
+		
+		2.//行尾使用";"作为一行的结束符号（或者使用“折行符”）
+		
+		3.js的注释  有两种
+			//单行注释
+			/* */多行注释
+		4.封装代码块
+			使用{}
+			
+		5.声明变量可以不使用var，区别
+			不加var，该变量是全局变量
+			
+	3.js的数据类型
+		java数据类型  基本数据类型  引用数据类型
+		js数据类型    原始数据类型  对象数据类型
+		
+		js中原始数据类型包括：
+			number（整型，浮点型）
+			string 字符串型
+			boolean 布尔类型
+			null 用来标识引用数据类型的占位符
+			undifined 由null衍生出来的一个值
+				没有给初始变量赋值，系统默认undifined
+				函数没有返回值，默认返回undifined
+			typeof  判断一个变量属于那种原始数据
+					判断null返回object
+					
+	4.js中的语句
+		循环语句
+		for,while
+		选择语句
+		if switch
+		java中的增强for循环js中没有，js中为for(var xx in xx)
+		
+	5.js中的运算符
+		
+		1.一元运算符
+		加法，减法
+		var a=+1;
+		var b=-1;
+		在js中的高级应用：
+			var c=+"1";//这样是在进行类型转换
+			var d=-"abc"；//类型转换失败，返回number的特殊值NaN 
+		
+		2.boolean(位)运算符 ！&& ||
+			js中自动类型转换(也就是说转换为boolean类型)：
+			//string  ""转换为false，其他的都转换为true
+			//number  除了NaN，+0，-0，其他的转化为true
+			//null  false
+			//undifined  false
+			
+			//NaN特性：NaN参与的任何boolean运算返回值都是false，除了！=
+			//因为undefined是null衍生出来的，所以null==undefined 返回true
+			
+		3.比较运算符
+			//"11">3  返回true，当运算符一端是数字类型，另一端是非数字类型时，非数字类型会自动向数字类型转换
+			//字符串进行比较时，首先比较首字母的ascii码值，若相同则比较第二个的...
+				//"11">"3" 返回false
+				//"11">"1" 返回true 
+			//全等运算 ===比较时包括类型
+			
+	6.js中的对象
+		1.object对象，是所有对象的超类
+		2.Function对象
+			1>Function创建方式
+				1.var fun1 = new Function("a","b","alert(a+b);");
+				2.var fun2 = function (a,b){alert(a+b);}
+				3.function fun3(a,b){alert(a+b)}
+			2>Function 的调用
+				js中函数的调用只看函数名称
+				调用时内置对象arguments
+					arguments代表 函数运行期间实际参数列表.
+					arguments.length ==> 实际参数个数
+					arguments[0] ==> 第一个参数.
+			应用: arguments 实现函数的重载.
+				//1 js中的函数对象
+				//函数的调用
+					function fun1(a,b){
+					alert(a+b);
+					}
+					
+					/*f un1(1,2);//3
+					fun1(1,2,3);//3
+					fun1();//NaN */
+					
+					//js中函数的调用只看函数名称.不看参数列表
+				function fun2(){
+						//alert(arguments.length); //取得实际参数个数
+						alert(arguments[0]); // 获得第一个实际参数
+					}
+					//函数中的内置对象 arguments
+					//arguments ==> 代表函数运行时的实际参数列表.
+					/* fun2(); //0  undefined
+					fun2(1,2); //2 1
+					fun2(1,2,3); //3 1 */
+					
+				// js中存在函数的重载吗? 如何重载?
+						function fun3(){
+							alert('aaa');
+						}
+						function fun3(a){
+							alert('bbb');
+						}
+					//如上不能重载,是覆盖
+						function fun4(){
+						if(arguments.length == 2){
+							alert(arguments[0]+arguments[1]);
+						}else if(arguments.length == 3){
+							alert(arguments[0]+arguments[1]-arguments[2]);
+						}
+						
+					}
+					
+					
+					fun4(1,2);//3
+					fun4(1,2,3);//0
+					
+					//以上是重载.
+		
+			3> 函数的返回
+				1>如果函数没有显示指定返回值 那么函数返回值为undefined.
+				2>//使用return 关键字,返回内容
+				3>return 关键字,在js中也可以作为结束方法运行的功能.
+				4>void运算符的应用.
+				
+					//---如果函数没有显示指定返回值 那么函数返回值为undefined.
+					/* 	function fun1(){}
+						alert(fun1()); */
+					//-----------------------------------
+					//使用return 关键字,返回内容
+						 function fun2(a,b){
+							alert('fun2');
+							return a+b;
+						}
+						//alert(fun2(1,2));//3 
+					//return 关键字,在js中也可以作为结束方法运行的功能.
+						function fun3(){
+							alert('aaa');
+							return ;
+							alert('bbb');
+						}
+						//fun3();
+					//--运算符 void()的使用-----------
+					//用来拦截函数的返回值的.
+						//alert(void(fun2(1,2)));//undefined
+						
+		3.js中对象的分类
+		
+			1.本地对象(Native object) 
+				Object  
+				Function(特殊)
+				String
+				Number
+				Boolean  以上3个是3个原始数据类型的包装对象. 原始数据类型可以直接调用包装对象的属性和方法.
+				Array  1.数组中类型没有限制.		2数组的长度是随着使用而变化的.
+				Date 
+				RegExp /正则表达式/匹配模式 .  test方法. 
+					
+				
+					本地对象中有一部分对象特殊: 内建对象(buid in object): 不需要创建实例,可以直接使用.
+						Global: 直接写,无需前缀. 
+						Math:调用时需要写"Math."
+						
+			2.主机对象 ==> DOM BOM 两部分.
+			
+		4.js中三个包装类对象
+			String，Number，Boolean
+			伪对象: string number boolean 这3个原始类型可以看作是伪对象, 能直接调用包装对象的方法和属性.
+			Boolean 和 Number 类型 中的方法在开发中几乎不可能用到.
+			
+			1.String对象
+				属性
+					length
+				方法
+					//1 没用的方法
+					/* alert(str1.big());
+					alert(str1.sub()); 
+					alert(str1.bold());*/
+				//2 重要的方法
+					//indexOf
+					//lastIndexOf
+					//charAt 
+					//alert(str1.charAt(0));//a
+					//charCodeAt 返回所在字符的asc码
+					//alert(str1.charCodeAt(0));//97
+					//subString 
+					alert(str1.substring(0, 1));//a 
+					//slice 支持负数. 从右往左.
+					alert(str1.slice(0, -1));//a
+				//3 与正则结合的方法(正则对象讲完回来看.)
+					//split
+					//replace
+					//match
+					//search
+					
+			2.//利用3大包装类的构造函数进行类型转换.
+				// string ==> boolean
+				var b1 = new Boolean("abc");
+				//boolean ==> string
+				var str1 = new String(true);
+				// number ==> string
+				var str2 = new String(123);
+				//string ==> number
+				var num1 = new Number("123");
+				//....
+				//运算符==> 
+					//typeof 运算符 判断原始数据类型的.
+					//instanceof 运算符 用来判断属于哪种对象.
+				alert(num1 instanceof Number);//true
+				alert(num1 instanceof Object);//true
+				alert(num1 instanceof String);//false
+				
+		3.Global对象
+			//6个方法==> 关于解码,编码的方法
+			//encodeURI 编码 只编码汉字
+			//decodeURI 解码
+				
+			var url = "http://www.baidu.com?name=?张/三:"
+			var url2 = encodeURI(url);
+				//alert(decodeURI(url2));//张三
+			//encodeURIComponent 编码 当提交的值中包含一些url中的敏感符号时,使用该方法对敏感符号编码.
+			//decodeURIComponent 
+				//alert(encodeURIComponent(url));
+			//escape  已经过时
+			//unescape 已经过时
+			// isNaN  判断某个值是否是NaN ==> NaN==NaN=>false 
+			//alert(isNaN(NaN));//true
+			//alert(NaN == NaN);//false
+			// parseInt   转换成整数
+			// parseFloat 转换成浮点数
+				
+			var str = "123abc";
+				
+			//1.使用 +
+			//2.使用 new Number()
+			//3.parseInt 
+				
+			//alert(typeof parseInt(str));//number
+			/* alert(+str); //NaN
+			alert(new Number(str));//NaN
+			alert(parseInt(str));// 123 */
+				
+			//区别: 1,2两种转换属于将字符串整体进行转换.如果字符串中包含1个或以上转换不了的字符,返回NaN
+				  //3 从左到右 依次转换,能转一个是一个,直到遇到不能转换的值停止.
+				   
+			// parseFloat 转换成浮点数
+			//与上面的parseInt一样.区别是支持转换小数
+			var str = "3.1415.9265357";
+				
+			alert(parseInt(str));// 3
+			alert(parseFloat(str));//3.1415
+			
+		4.Math对象 
+			//属性内建对象==> 不需要创建实例,直接使用即可.
+
+			//属性
+			//PI ==> 3.14159 圆周率
+			//方法
+			//random方法 ==> 返回随机数 0~1之间的随机数 包括0不包括1
+	
+			//alert(Math.random());
+	
+			//round方法==> 四舍五入方法.
+			//返回0~100之间的随机数.0 和100 都可能出现
+			//alert(Math.round(Math.random()*100));
+	
+			//max/min 方法 ==> 接收两个参数,比较之后返回最大/最小的那个.
+	
+			alert(Math.max(1,2));//2
+	
+			//pow ==> 计算参数1的参数2次方.
+	
+			alert(Math.pow(2,3));//8
+			
+		5.Array对象  ==> 数组
+			//1.创建方式
+				//1>创建方式1 创建一个数组并初始化值
+					var arr1 = ["abc",2,true,null,undefined,new Object()]; 
+				//2>创建方式2 同方式1
+					var arr2 = new Array(1,2,3);
+				//3>创建方式3 ==> 创建一个长度为3的数组. 数组Array的构造函数,如果只传一个参数,并且这个参数是整数.那么这个整数就是数组的初始化长度.
+					var arr3 = new Array(3);
+			//2.属性
+				//length ==> 数组的长度
+				/* alert(arr1.length);//6
+				alert(arr2.length);//3
+				alert(arr3.length);//3 */
+			//js中数组的特点:
+					//1.js中的数组,类型任意.
+					//2.数组的长度不是固定的.用到哪里,就有多长.
+				/* arr3[8] = 10;
+				alert(arr3.length);//9
+				alert(arr3[6]);//undefined */
+			//3.方法
+				var arr4 = [1,2,3];
+				//join方法==> 将数组中的每个元素连接起来返回一个字符串.参数就是连接符.(默认连接符是",")
+				//alert(arr4.join(""));//使用该方法可以模拟一个StringBuilder
+				
+						//join方法的高级应用.
+							/*
+								var str1 = "a";
+								var str2 = "b";
+								var str3 = "c";
+								 alert(str1+str2+str3);
+								 
+								 ["a","b","c"] ==> "abc"
+							*/
+				//push/pop ==> 模拟栈的结构.
+				//shift/unshift==> 模拟队列的结构
+				
+				//reverse方法 ==> 将数组中的元素顺序倒置
+					//alert(arr4.reverse());//3.2.1
+				//sort方法 ==> 排序的方法. 
+				//注意: 该方法默认排序规则,按照字符串规则排序.
+				//如果需要按照数字排序,需要准备一个比较器.
+				var arr5 = [2,9,3,100,5,7,1];
+				
+				alert(arr5.sort(abc))//
+				
+				//函数对象==> 比较器
+				function abc(a,b){
+					/* if(a>b){
+						return 1;
+					}else if(a==b){
+						return 0;
+					}else{
+						return -1;
+					} */
+					
+					return a-b;
+				}
+				
+		6.Date对象
+			/* 1.new Date() 获取当前时间
+			2.getFullYear() 获取年份
+			3.getMonth() 获取月份注意 1月份结果为0
+			4.getHours() 小时
+			5.getDate() 日期
+			6.getMinutes() 分钟
+			7.getSeconds() 获取秒
+			8.getTime()  获取毫秒值.
+			9.toLocaleString() 获取本地的时间格式字符串. 
+			10.getDay();获得星期
+			*/
+			//空参构造获得当前时间
+			var date = new Date();//当前时间
+			//填入毫秒数,获得毫秒数对应的时间
+			var date2 = new Date(10000000000000);
+
+			/* alert(date.getFullYear());//
+			alert(date.getMonth());//
+			alert(date.getHours());//
+			alert(date.getDate());//
+			alert(date.getMinutes());//
+			alert(date.getSeconds());//
+			alert(date.getTime());//
+			alert(date.toLocaleString());//
+			alert(date.getDay());// */
+
+			//注意:
+				//1.月份计数时是0~11月,所以要加1获得正常月份
+				//2.星期计数是 0~6 .
+				
+		7.RegExp正则对象
+			//1 构造方法
+				//参数1 正则字符串 ,参数2 匹配模式
+				//用户名必须 以字母开头,长度在6到10位之间.
+				//匹配模式有两种 
+					//"i": 忽略大小写. ignoredCase
+					//"g": 全局匹配 global
+				var reg1 = new RegExp("^[a-zA-Z][a-zA-Z_0-9]{5,9}$","g");
+				var reg2 = /^[a-zA-Z][a-zA-Z_0-9]{5,9}$/g;
+			//2 方法
+				//test方法 ==> 测试字符串与正则是否匹配.
+			var username = "a3456";
+					//alert(reg1.test(username));//true
+					
+			//与String对象结合的4个方法
+			var str = "hello world";
+				//split 切割字符串
+					//alert(str.split(/o/g));
+				//replace 查找替换
+					//alert(str.replace(/o/g, "haha"));
+				//search 只能找第一个出现的位置. 如果需要查找第n个出现的位置使用exec方法.
+					//alert(str.search(/o/g));
+				//match ==> 找到字符串中符合正则表达式的部分并返回.
+					alert(str.match(/o/g));
+					
+		8.BOM对象
+			window对象
+			//window对象代表一个html文档.
+			//方法
+				// alert confirm prompt close
+				// open => 打开一个新的窗口
+				//语法window.open(URL,name,features,replace)
+					// 参数1.新打开窗口的地址
+					// 参数2.(没有用) 新打开窗口的名称.
+					// 参数3. 新窗口的一些特征
+					// 参数4. (没有用) 需不需要用新打开的窗口记录来替换调用open方法页面的历史记录.
+					// 返回值: 返回新打开窗口的window对象.
+				
+				var baiduWindow = open("http://www.baidu.com","","width=200,height=100");
+				
+				alert(baiduWindow);
+
+			//总结: window对象是由浏览器创建的,加载文档时,浏览器就自动创建出来了.我们直接使用方法和属性即可.
+			//理论上window对象调用方法和属性时,不需要加前缀. 推荐加上"window."
+			
+			//方法:
+				// setInterval clearInterval
+				// setTimeout  clearTimeout
+				
+				// 定时器方法 ,设置定时器(setInterval), 清除定时器(clearInterval).
+				
+				//参数1: 接受一个字符串.这个字符串是js代码.
+				//参数1: 还可以接受一个函数对象.
+				//参数2:接受一个整数,单位是毫秒
+				//返回值: 打开的定时器的ID
+				//每隔参数2毫秒数执行参数1代码或函数.
+					//window.setInterval("alert('aaa');", 3000);
+				
+					var ID = window.setInterval(fun1, 3000);
+				
+					function fun1(){
+						alert('bbb');
+					}
+				//clearInterval ==>  清除定时器
+				
+				window.clearInterval(ID);
+				
+				----------------------------------------
+				<script type="text/javascript">
+				//window对象代表一个html文档.
+					//属性
+						//self parent top 
+						//frames
+						//opener
+						
+				</script>
+
+				</head>
+				<body>
+						<iframe src="03-页面时钟.html" >
+						//该标签的效果是在当前页面“挖个坑”，
+						</iframe>
+
+				</body>
+				
+		9.history对象。
+			history对象代表当前页面的访问历史
+			//获得: history对象是window对象的属性.
+				var history = window.history;
+			//属性
+				//length --> 当前标签页一共浏览过几个页面
+				
+			//方法
+				//forward ==> 前进
+				//back ==> 后退
+				//go ==> 前进或后退
+				//前进
+				function fun1(){
+					//window.history.forward();
+					window.history.go(1);
+				}
+				
+		10.location对象
+			//Location对象代表了当页面的地址
+			//属性
+				//href  ==> 用来改变当前页面的地址
+			//方法 
+				//参数1,可以填一个url, 刷新到url指定页面.
+				//reload() ==> 刷新当前页面
+			function fun1(){
+						
+						window.location.href = "http://www.baidu.com";
+					}
+			function fun2(){
+				
+				window.location.reload();
+			}	
+			
+	
+	Dom技术
+		1.//一下这些对象全都不是我们自己创建的. 浏览器创建的.加载html文档时就已经创建了.
+
+			//获得文档对象 
+				var doc = window.document;
+				/* 	alert(doc.nodeName); //#document
+					alert(doc.nodeValue); // null
+					alert(doc.nodeType); // 9 */
+			//获得元素对象
+				var font = document.getElementById("one");
+					/* alert(font.nodeName); //font
+					alert(font.nodeValue); // null
+					alert(font.nodeType); // 1 */
+			//获得属性对象
+				var color = font.getAttributeNode("color");
+					/* alert(color.nodeName); // 属性名称
+					alert(color.nodeValue); // 属性值
+					alert(color.nodeType); // 2 */
+			//获得文本对象
+				var text = font.firstChild;
+					alert(text.nodeName); // #text
+					alert(text.nodeValue); // 文本内容
+					alert(text.nodeType); //  3
+					
+		2.获取Element对象的方式
+			//获得元素对象,方式01
+			//获得元素对象 , 在整个文档范围内查找一个 id值为one的元素对象.
+				var font = document.getElementById("one");
+				
+			//获得元素对象,方式02
+			//获得元素对象 , 在整个文档范围内查找一个元素名称为font的元素对象.
+			//返回一个 元素数组(nodeList,在js中就当数组用)
+				var font = document.getElementsByTagName("font")[0];
+				
+			//获得元素对象,方式03
+			//获得元素对象 , 在整个文档范围内查找Class名称为one的元素对象数组.
+			//返回一个 元素数组(nodeList,在js中就当数组用)
+				var font = document.getElementsByClassName("one")[0];
+				alert(font);
+				
+			//获得元素对象,方式04
+			//获得元素对象 , 在整个文档范围内查找Name名称为one的元素对象数组.
+			//返回一个 元素数组(nodeList,在js中就当数组用)
+				var font = document.getElementsByName("one")[0];
+				alert(font);
+				
+			在元素范围内获得元素的方式
+				<body>
+					<div id="one" >
+						<div id="two" class="two" name="two" ></div>
+					</div>
+				</body>
+				</html>
+				<script type="text/javascript">
+					var one = document.getElementById("one");
+					//根据ID查找里面的div ==> 不支持
+					/* var two =	one.getElementById("two");
+					alert(two); */
+					//根据 class查找 ==> 不支持
+						/* var two = one.getElementsByClassName("two")[0];
+						alert(two); */
+					//根据name查找 ==> 不支持
+						/* var two = one.getElementsByName("two")[0];
+						alert(two); */
+					//根据标签名称查找==> 支持
+						var two = one.getElementsByTagName("div")[0];
+						alert(two);
+				</script>
+				
+		3.dom中的事件
+			//事件: 给对应的元素对象,添加一个Function类型的属性.
+		   //这个function对象会在相应的实际被调用.
+		   // 调用的时机跟 属性的名称有关.
+				/* //1.div获得到
+				var one = document.getElementById("one");
+				//2.为div新增一个属性( Function)
+				one.onclick = function (){
+					alert('aaa');
+				} */
+				
+			//以上是为元素对象附加事件属性的两种方式.
+		//----------------------------------------------------------------
+			//被支持的常用事件有哪些?
+			onfocus 获得焦点后触发，例如文本输入框中点击出现光标之后
+			onblur	失去焦点后触发，例如点击文本框的外部，光标消失
+			onchange 值发生变化，常用于文本框输入文本，文本更改后触发
+			onkeydown 键盘按下会触发，常用于文本框输入文本后，按下回车键，表单提交
+			onload  一般只用于body标签，表示对应的内容加载完后触发
+			
+			// onblur 
+			// onfocus
+			var two =  document.getElementById("two");
+				two.onfocus=function (){
+					alert("onfocus");
+				}
+				two.onblur=function (){
+					alert("onblur");
+				}
+				
+			//被支持的常用事件有哪些?
+			// onchange 
+			var two =  document.getElementById("two");
+				two.onchange=function (){
+					alert("onchange");
+				}
+			//----
+				var three =  document.getElementById("three");
+				three.onchange=function (){
+					alert("onchange");
+				}
+				
+			//被支持的常用事件有哪些?
+			// onkeydown 
+			var two =  document.getElementById("two");
+				two.onkeydown=function (event){//注意event对象，可以用来接收触摸事件
+					if(event.keyCode == 13){//13表示按下回车返回的Unicode码
+						alert("表单提交啦!");
+					}
+				}
+		//被支持的常用事件有哪些?
+				// onload 
+				function fun1(){
+					var two =document.getElementById("two");
+					alert(two);
+				}
+					
+			</script>
+			</head>
+			<body onload="fun1();">
+				<input type="text" id="two" /><br/>
+			</body>
+			
+		//被支持的常用事件有哪些?
+			/* onmousedown 鼠标按钮被按下。 4 1 9 Yes 
+				//onmouseup 鼠标按键被松开。 4 1 9 Yes  
+				
+				onmouseover 鼠标移到某元素之上。 3 1 9 Yes 
+				onmouseout 鼠标从某元素移开。 4 1 9 Yes 
+				
+				onmousemove 当鼠标悬停时,连续被触发.。 3 1 9 Yes 
+				
+				*/
+
+			function fun1(){
+				var two =document.getElementById("two");
+				two.onmousedown=function (event){
+					//鼠标按键按下时触发
+					//获得按下的是哪个键
+					alert(event.button);
+				}
+			/* 	two.onmouseup=function (){
+					alert("onmouseup");
+				} */
+				/* two.onmouseover=function (){
+					alert("onmouseover");
+				}
+				two.onmouseout=function (){
+					alert("onmouseout");
+				} */
+				two.onmousemove=function (event){
+					//alert("onmousemove");
+					alert(event.clientX+"=="+event.clientY);
+				} 
+				
+			}
+			
+		//被支持的常用事件有哪些?
+			/* onsubmit 当表单提交之前触发
+				*/
+
+			function fun1(){
+				var two =document.getElementById("two");
+				two.onsubmit=function(event){
+					alert('onsubmit');
+					//做验证的话.如果验证失败,如何拦截表单提交?
+					//拦截方式一:
+							//该事件是众多事件中最特殊的一个.
+							//该事件可以返回一个boolean型的值
+							// true==> 表单提交
+							// false ==> 拦截表单提交
+							//return false;
+					//拦截方式二: 
+							//preventDefault() => 
+							
+						event.preventDefault();
+				}
+			}
+			
+			/* stopPropagation() 
+					*/
+
+				function fun1(){
+					var one =document.getElementById("one");
+					var two =document.getElementById("two");
+					one.onclick=function(){
+						alert("oneoneoneone");
+					}
+					two.onclick=function(event){
+						alert("twotwotwotwo");
+						event.stopPropagation();
+					}
+				}
+	--------------------------------------------------------------------------------			
+	例子
+	1.盒子模型的典型属性
+	display：block|inline|none
+	visibility: hidden;//不显示，但保留位置
+	
+		div {
+			display: none;
+		}
+			span {
+		/*
+			display : 调整标签类型
+				block
+				inline
+				none 不显示,而不留位置
+			
+			display: none;
+		*/
+		visibility: hidden;
+		}
+		
+	======================================================================================
+	总结：
+	BOM，浏览器对象模型，用来控制浏览器的一些模型
+	
