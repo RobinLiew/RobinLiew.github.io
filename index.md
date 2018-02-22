@@ -1,4 +1,4 @@
-### 欢迎来到我的博客主页
+### 欢迎来到我的博客主页 Welcome to GitHub Pages
 
 ## Android
 ### [开发工具Android ADT和Android Studio](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Android/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Android%20ADT%E5%92%8CAndroid%20Studio.html)
@@ -15,7 +15,8 @@
 ### [Android的assets资源使用](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Android/%E4%BA%94%E3%80%81Android%E7%9A%84assets%E8%B5%84%E6%BA%90%E4%BD%BF%E7%94%A8.md)
 ### [用文件对数据进行存储](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Android/%E5%9B%9B%E3%80%81%E7%94%A8%E6%96%87%E4%BB%B6%E5%AF%B9%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%AD%98%E5%82%A8.md)
 ### [多媒体编程](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Android/%E5%A4%9A%E5%AA%92%E4%BD%93%E7%BC%96%E7%A8%8B.md)
-
+## Java基础
+### []()
 ### []()
 
 ### Welcome to GitHub Pages.
