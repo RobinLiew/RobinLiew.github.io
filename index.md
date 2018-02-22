@@ -1,5 +1,5 @@
 ### 欢迎来到我的博客主页 Welcome to GitHub Pages
-#### <font color='blue'>终于把博客迁移到github上了。O(∩_∩)O~ 我会不定期的更新我的博客主页，有疑问可以通过liubin1498975990@gmail.com联系，同时欢迎关注我github上的项目。</font>
+#### <font color='blue'>终于把博客迁移到github上了。O(∩_∩)O~ 我会不定期的更新我的博客主页，有疑问可以通过liubin1498975990@gmail.com联系，同时欢迎关注我github上的项目(https://github.com/RobinLiew)。</font>
 
 #### <font color='red'>野蛮生长，不忘初心！</font>
 
