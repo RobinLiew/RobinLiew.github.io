@@ -1,7 +1,7 @@
 ### 欢迎来到我的博客主页 Welcome to GitHub Pages
 #### <font color='blue'>终于把博客迁移到github上了。O(∩_∩)O~ 我会不定期的更新我的博客主页，有疑问可以通过liubin1498975990@gmail.com联系，同时欢迎关注我github上的项目。</font>
 
-<font color='red'>野蛮生长，不忘初心！</font>
+#### <font color='red'>野蛮生长，不忘初心！</font>
 
 ## 算法
 ### [RS纠删算法原理与项目源码](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%AE%97%E6%B3%95/RS%E7%BA%A0%E5%88%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.md)
