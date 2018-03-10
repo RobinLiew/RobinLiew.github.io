@@ -17,6 +17,7 @@
 
 ## Linux
 ### [linux学习笔记（基础）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Linux/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89.md)
+### [linux学习笔记（Shell）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Linux/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Shell%EF%BC%89.md)
 
 ## Java并发
 ### [Java并发编程基础](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java%E5%B9%B6%E5%8F%91/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.md)
