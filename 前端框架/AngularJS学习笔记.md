@@ -525,10 +525,9 @@ $rootScope 可作用于整个应用中。是各个 controller 中 scope 的桥�
 	filter 过滤器从数组中选择一个子集
 	
 	 // 查找name为iphone的行
-	{{ [{"age": 20,"id": 10,"name": "iphone"},
-	{"age": 12,"id": 11,"name": "sunm xing"},
-	{"age": 44,"id": 12,"name": "test abc"}
-	] | filter:{'name':'iphone'} }}        
+	<!-- 
+	       
+	-->
 	
 	6、limitTo 截取
 	
@@ -538,16 +537,10 @@ $rootScope 可作用于整个应用中。是各个 controller 中 scope 的桥�
 	7、orderBy 排序
 	
 	 // 根id降序排
-	{{ [{"age": 20,"id": 10,"name": "iphone"},
-	{"age": 12,"id": 11,"name": "sunm xing"},
-	{"age": 44,"id": 12,"name": "test abc"}
-	] | orderBy:'id':true }}
+	
 	
 	// 根据id升序排
-	{{ [{"age": 20,"id": 10,"name": "iphone"},
-	{"age": 12,"id": 11,"name": "sunm xing"},
-	{"age": 44,"id": 12,"name": "test abc"}
-	] | orderBy:'id' }}
+	
 	```
 
 	```
