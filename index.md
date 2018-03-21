@@ -6,6 +6,7 @@
 ### [RS纠删算法原理与项目源码](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%AE%97%E6%B3%95/RS%E7%BA%A0%E5%88%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.md)
 ### [RS（255,223）纠错算法原理与项目源码](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%AE%97%E6%B3%95/RS%EF%BC%88255%2C223%EF%BC%89%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.md)
 ### [基于BP神经元网络算法的模式识别](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%AE%97%E6%B3%95/%E5%9F%BA%E4%BA%8EBP%E7%A5%9E%E7%BB%8F%E5%85%83%E7%BD%91%E7%BB%9C%E7%AE%97%E6%B3%95%E7%9A%84%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB.md)
+### [神经元网络算法模式识别的一种应用](https://github.com/RobinLiew/wireless-communication/blob/master/%E5%9F%BA%E4%BA%8E%E4%B8%A4%E7%A7%8D%E7%AE%97%E6%B3%95%E5%AF%B9%E6%97%A0%E7%BA%BF%E4%BF%A1%E9%81%93%E2%80%9C%E6%8C%87%E7%BA%B9%E2%80%9D%E7%89%B9%E5%BE%81%E8%AF%86%E5%88%AB.pdf)
 
 ## 网络通信
 ### [TCP_IP详解](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/TCP_IP%E8%AF%A6%E8%A7%A3.md)
