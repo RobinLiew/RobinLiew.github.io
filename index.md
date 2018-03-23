@@ -26,6 +26,9 @@
 
 ## Java框架
 ### [hibernate中增删改查的写法](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E6%A1%86%E6%9E%B6/hibernate%E4%B8%AD%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E7%9A%84%E5%86%99%E6%B3%95%EF%BC%88%E4%B8%BB%E8%A6%81%E4%BB%8B%E7%BB%8D%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2%EF%BC%89.md)
+### [Hibernate框架知识点](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E6%A1%86%E6%9E%B6/Hibernate.jpg)
+### [Struts框架知识点](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E6%A1%86%E6%9E%B6/struts%E6%A1%86%E6%9E%B6.jpg)
+
 
 ## 前端框架
 ### [AngularJS学习笔记](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/AngularJS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
