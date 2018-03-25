@@ -17,15 +17,15 @@ RS编码以word为编码和解码单位，  大的数据块拆分到字长为w�
 RS最多能容忍m个删除错误。 数据恢复原理的过程如下：
 （1）从编码矩阵中删去丢失数据块和丢失编码块对应行。  假设D1、C2丢失，     根据图A.1所示RS编码运算等式，我们得到如下B'以及等式。  
   	
-	![这里写图片描述](https://img-blog.csdn.net/20180325135147442?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180325135147442?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 （2）由于B‘是可逆的， 两边乘上B’逆矩阵。 
 	
-	![这里写图片描述](https://img-blog.csdn.net/20180325135155380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180325135155380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 （3）得到如下原始数据D的计算公式 
 	
-	![这里写图片描述](https://img-blog.csdn.net/20180325135202691?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180325135202691?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 （4）对D重新编码，得到丢失的校验码
 
