@@ -1,7 +1,9 @@
 ﻿## Linux进程查看命令
 ### PS命令
 - 1.不带参数的ps使用
-![这里写图片描述](https://img-blog.csdn.net/20180326193105204?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+	![这里写图片描述](https://img-blog.csdn.net/20180326193105204?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 - 2.显示所有的当前进程
 
 	```
@@ -29,6 +31,7 @@
 	```
 ![这里写图片描述](https://img-blog.csdn.net/20180326193641782?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 - 5.树形显示进程
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326193834102?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 - 6.查看所有关于java的进程
 
