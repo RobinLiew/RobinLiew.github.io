@@ -159,7 +159,5 @@
 接下来我们以第一个线程为例，对其进行监控分析
 ### 3.然后借助JVM的 jconsole.exe  工具对相应线程进行具体分析
 
-
 ![这里写图片描述](https://img-blog.csdn.net/20180326214337895?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-
 jconsole具体使用细节可以参考 https://blog.csdn.net/ithomer/article/details/9923311 ，这里就不做过多的介绍了。
