@@ -1,22 +1,21 @@
 ### 欢迎来到我的博客主页 Welcome to GitHub Pages
-#### <font color='blue'>终于把博客迁移到github上了。O(∩_∩)O~ 我会不定期的更新我github pages，有疑问可以通过liubin1498975990@gmail.com联系，同时欢迎关注我github上的项目(https://github.com/RobinLiew)。</font>
+#### <font color='blue'>我会不定期的更新我github pages，有疑问可以通过liubin1498975990@gmail.com联系，同时欢迎关注我github上的项目(https://github.com/RobinLiew)。</font>
 
-#### <font color='red'>野蛮生长，不忘初心！</font>
 
 ## 算法
 ### [RS纠删算法原理与项目源码](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%AE%97%E6%B3%95/RS%E7%BA%A0%E5%88%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.md)
 ### [RS（255,223）纠错算法原理与项目源码](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%AE%97%E6%B3%95/RS%EF%BC%88255%2C223%EF%BC%89%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.md)
 ### [基于BP神经元网络算法的模式识别](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%AE%97%E6%B3%95/%E5%9F%BA%E4%BA%8EBP%E7%A5%9E%E7%BB%8F%E5%85%83%E7%BD%91%E7%BB%9C%E7%AE%97%E6%B3%95%E7%9A%84%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB.md)
+### [神经元网络算法模式识别的一种应用](https://github.com/RobinLiew/wireless-communication/blob/master/%E5%9F%BA%E4%BA%8E%E4%B8%A4%E7%A7%8D%E7%AE%97%E6%B3%95%E5%AF%B9%E6%97%A0%E7%BA%BF%E4%BF%A1%E9%81%93%E2%80%9C%E6%8C%87%E7%BA%B9%E2%80%9D%E7%89%B9%E5%BE%81%E8%AF%86%E5%88%AB.pdf)
 
 ## 网络通信
 ### [TCP_IP详解](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/TCP_IP%E8%AF%A6%E8%A7%A3.md)
 ### [计算机网络基础学习笔记](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
-
-## 前端框架
-### [AngularJS学习笔记](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/AngularJS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+### [Socket网络编程](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/Socket%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md)
 
 ## Linux
 ### [linux学习笔记（基础）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Linux/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89.md)
+### [linux学习笔记（Shell）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Linux/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Shell%EF%BC%89.md)
 
 ## Java并发
 ### [Java并发编程基础](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java%E5%B9%B6%E5%8F%91/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.md)
@@ -27,6 +26,12 @@
 
 ## Java框架
 ### [hibernate中增删改查的写法](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E6%A1%86%E6%9E%B6/hibernate%E4%B8%AD%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E7%9A%84%E5%86%99%E6%B3%95%EF%BC%88%E4%B8%BB%E8%A6%81%E4%BB%8B%E7%BB%8D%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2%EF%BC%89.md)
+### [Hibernate框架知识点](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E6%A1%86%E6%9E%B6/Hibernate.jpg)
+### [Struts框架知识点](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E6%A1%86%E6%9E%B6/struts%E6%A1%86%E6%9E%B6.jpg)
+
+
+## 前端框架
+### [AngularJS学习笔记](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/AngularJS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 
 ## Maven
 ### [Maven基本使用（图文教程）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Maven/Maven%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%EF%BC%88%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B%EF%BC%89.md)
