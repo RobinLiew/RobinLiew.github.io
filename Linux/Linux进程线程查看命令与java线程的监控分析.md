@@ -29,7 +29,9 @@
 	ps -f -C [进程名]
 	ps -f -C mysqld
 	```
+	
 	![这里写图片描述](https://img-blog.csdn.net/20180326193641782?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 - 5.树形显示进程
 
 	![这里写图片描述](https://img-blog.csdn.net/20180326193834102?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
@@ -42,6 +44,7 @@
 	
 ### top命令
 - 1.top命令经常用来监控Linux的系统状况，比如cpu、内存的使用。
+
 	![这里写图片描述](https://img-blog.csdn.net/20180326194526863?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 	
 - 2.第一行：
@@ -120,6 +123,7 @@
 
 ## 线程查看命令
 ### top –H（列出所有的线程）
+	
 	![这里写图片描述](https://img-blog.csdn.net/20180326195231168?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 	
 ### 让top输出某个特定进程[pid]并检查该进程内运行的线程状况
@@ -137,6 +141,8 @@
 	```
 	ps -T -p [pid]
 	```
+	
+	
 	![这里写图片描述](https://img-blog.csdn.net/20180326194406332?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ## Java线程监控分析（一般流程）
@@ -146,10 +152,12 @@
 	
 我们以第一个进程为例，对该进程的所有线程进行监控
 ### 2.查看相关进程的所有线程
+
 	![这里写图片描述](https://img-blog.csdn.net/20180326213435746?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 	
 接下来我们以第一个线程为例，对其进行监控分析
 ### 3.然后借助JVM的 jconsole.exe  工具对相应线程进行具体分析
+
 	![这里写图片描述](https://img-blog.csdn.net/20180326214337895?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 	
 jconsole具体使用细节可以参考 https://blog.csdn.net/ithomer/article/details/9923311 ，这里就不做过多的介绍了。
