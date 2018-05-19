@@ -16,6 +16,7 @@
 ## Linux
 ### [linux学习笔记（基础）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Linux/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89.md)
 ### [linux学习笔记（Shell）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Linux/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Shell%EF%BC%89.md)
+### [Linux进程线程查看命令与java线程的监控分析](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Linux/Linux%E8%BF%9B%E7%A8%8B%E7%BA%BF%E7%A8%8B%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4%E4%B8%8Ejava%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%9B%91%E6%8E%A7%E5%88%86%E6%9E%90.md)
 
 ## Java并发
 ### [Java并发编程基础](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java%E5%B9%B6%E5%8F%91/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.md)

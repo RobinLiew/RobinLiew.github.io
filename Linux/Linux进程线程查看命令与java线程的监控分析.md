@@ -1,7 +1,9 @@
 ﻿## Linux进程查看命令
 ### PS命令
 - 1.不带参数的ps使用
-![这里写图片描述](https://img-blog.csdn.net/20180326193105204?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+	![这里写图片描述](https://img-blog.csdn.net/20180326193105204?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 - 2.显示所有的当前进程
 
 	```
@@ -13,11 +15,11 @@
 	```
 	ps -aux | less
 	默认的结果集是未排好序的。可以通过 –sort命令来排序。
-根据 CPU 使用来升序排序
+	根据 CPU 使用来升序排序
 	ps -aux --sort -pcpu | less
-根据 内存使用 来升序排序
+	根据 内存使用 来升序排序
 	ps -aux --sort -pmem | less
-我们也可以将它们合并到一个命令，并通过管道显示前10个结果：
+	我们也可以将它们合并到一个命令，并通过管道显示前10个结果：
 	ps -aux --sort -pcpu,+pmem | head -n 10
 
 	```
@@ -27,9 +29,13 @@
 	ps -f -C [进程名]
 	ps -f -C mysqld
 	```
-![这里写图片描述](https://img-blog.csdn.net/20180326193641782?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
+	![这里写图片描述](https://img-blog.csdn.net/20180326193641782?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 - 5.树形显示进程
-![这里写图片描述](https://img-blog.csdn.net/20180326193834102?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+	![这里写图片描述](https://img-blog.csdn.net/20180326193834102?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 - 6.查看所有关于java的进程
 
 	```
@@ -38,14 +44,17 @@
 	
 ### top命令
 - 1.top命令经常用来监控Linux的系统状况，比如cpu、内存的使用。
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326194526863?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+
 - 2.第一行：
 
 	```
 	第一块：当前系统时间
 	第二块：系统已经运行了3天23小时26分
 	第三块：当前有1个用户登录系统
-	第四块：load average后面的三个数分别是1分钟、5分钟、15分钟的负载情况。load average数据是每隔5秒钟检查一次活跃的进程数，然后按特定算法计算出的数值。如果这个数除以逻辑CPU的数量，结果高于5的时候就表明系统在超负荷运转了。
+	第四块：load average后面的三个数分别是1分钟、5分钟、15分钟的负载情况。load average数据是每隔5秒钟检查一次活跃的进程数，然后按特定算法计算		出的数值。如果这个数除以逻辑CPU的数量，结果高于5的时候就表明系统在超负荷运转了。
 	```
 	
 - 3.第二行：
@@ -68,7 +77,7 @@
 	0.0 wa — IO等待占用CPU的百分比
 	0.0 hi — 硬中断（Hardware IRQ）占用CPU的百分比
 	0.0 si — 软中断（Software Interrupts）占用CPU的百分比
-用户空间就是用户进程所在的内存区域，相对的，系统空间就是操作系统占据的内存区域。用户进程和系统进程的所有数据都在内存中。
+	用户空间就是用户进程所在的内存区域，相对的，系统空间就是操作系统占据的内存区域。用户进程和系统进程的所有数据都在内存中。
 	```
 	
 	
@@ -115,7 +124,9 @@
 
 ## 线程查看命令
 ### top –H（列出所有的线程）
+	
 ![这里写图片描述](https://img-blog.csdn.net/20180326195231168?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 ### 让top输出某个特定进程[pid]并检查该进程内运行的线程状况
 
 	```
@@ -125,20 +136,28 @@
 	```
 
 ![这里写图片描述](https://img-blog.csdn.net/20180326195321929?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 ### 查看由进程号为[pid]的进程创建的所有线程
 
 	```
 	ps -T -p [pid]
 	```
+	
+	
 ![这里写图片描述](https://img-blog.csdn.net/20180326194406332?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ## Java线程监控分析（一般流程）
 ### 1.先用top命令找出占用资源比较多的java进程id
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326212712948?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 我们以第一个进程为例，对该进程的所有线程进行监控
 ### 2.查看相关进程的所有线程
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326213435746?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+	
 接下来我们以第一个线程为例，对其进行监控分析
 ### 3.然后借助JVM的 jconsole.exe  工具对相应线程进行具体分析
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326214337895?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdWJpbjE5OTFsaXViaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 jconsole具体使用细节可以参考 https://blog.csdn.net/ithomer/article/details/9923311 ，这里就不做过多的介绍了。
