@@ -44,6 +44,7 @@
 ### [tomcat服务器的介绍、安装与配置](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java%20web/tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BB%8B%E7%BB%8D%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.md)
 ### [NPM工具的使用](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java%20web/NPM%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 ### [myeclipse闪退的解决办法](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java%20web/myeclipse%E9%97%AA%E9%80%80%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.md)
+### [IntelliJ IDEA配置与使用（图文教程）](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java%20web/IntelliJ%20IDEA%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%EF%BC%88%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B%EF%BC%89.md)
 
 ## Java基础
 ### [JAVA语言基础，数据类型、运算符、流程控制、数组](https://github.com/RobinLiew/RobinLiew.github.io/blob/master/Java/Java%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86.md)
